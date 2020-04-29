@@ -31,11 +31,6 @@ components:
     volumes:
       - name: m2
         containerPath: /home/user/.m2
-    endpoints:
-      - name: 'hello-greeting-endpoint'
-        port: 8080
-        attributes:
-          path: /hello/greeting/che-user
 
   - type: dockerimage
     alias: ubi-quarkus-native-image
@@ -78,7 +73,7 @@ commands:
       -
         type: exec
         component: ubi-quarkus-native-image
-        command: ./getting-started-command-mode-1.0-SNAPSHOT-runner
+        command: './getting-started-command-mode-1.0-SNAPSHOT-runner supersonic-che-user'
         workdir: ${CHE_PROJECTS_ROOT}/quarkus-quickstarts/getting-started-command-mode/target
   -
     name: Attach remote debugger
