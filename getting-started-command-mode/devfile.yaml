@@ -2,6 +2,8 @@
 apiVersion: 1.0.0
 metadata:
   generateName: quarkus-commandmode-
+attributes:
+  persistVolumes: 'false'
 projects:
   -
     name: quarkus-quickstarts
