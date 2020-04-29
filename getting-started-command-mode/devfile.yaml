@@ -51,7 +51,7 @@ commands:
         workdir: ${CHE_PROJECTS_ROOT}/quarkus-quickstarts/getting-started-command-mode
 
   -
-    name: Start Dev mode (Hot reload + debug)
+    name: Run Dev mode (Hot reload + debug)
     actions:
       -
         type: exec
@@ -68,7 +68,7 @@ commands:
         workdir: ${CHE_PROJECTS_ROOT}/quarkus-quickstarts/getting-started-command-mode
 
   -
-    name: Start Native
+    name: Run Native
     actions:
       -
         type: exec
